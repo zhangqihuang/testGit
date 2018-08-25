@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <Box/>
+    a:<input type="number" v-model.number="a"><br/>
+    b:<input type="number" v-model.number="b"><br/>
+    {{count()}}
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -13,6 +16,18 @@ import Box from './components/Box.vue'
 export default {
   components:{
     Box
+  },
+  data(){
+    return{
+      message:'hello vue',
+      a:1,
+      b:2
+    }
+  },
+  methods:{
+    count(){
+      return this.a+this.b;
+    }
   }
 }
 </script>
