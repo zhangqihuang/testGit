@@ -8,7 +8,6 @@
     <router-view/>
   </div>
 </template>
-
 <script>
 import Box from './components/Box.vue'
 export default {
