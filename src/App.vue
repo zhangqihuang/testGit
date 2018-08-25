@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <p>{{message}}</p>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,16 @@
     <router-view/>
   </div>
 </template>
+<script>
+export default {
+ name:'App',
+ data(){
+   return{
+     message:'hello vue'
+   }
+ }
+}
+</script>
 
 <style lang="less">
 #app {
