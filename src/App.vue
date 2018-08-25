@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Box/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import Box from './components/Box.vue'
+export default {
+  components:{
+    Box
+  }
+}
+</script>
 
 <style lang="less">
 #app {
