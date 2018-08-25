@@ -1,15 +1,9 @@
 <template>
   <div id="app">
     <Box/>
-    <p>
-        a:<input type="number" v-model.number="a"><br/>
-    </p>
-    <p>
-        b:<input type="number" v-model.number="b"><br/>
-    </p>
-    <p>
-      求和：{{count}}
-    </p>
+    a:<input type="number" v-model.number="a"><br/>
+    b:<input type="number" v-model.number="b"><br/>
+    {{count}}
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
