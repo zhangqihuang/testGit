@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>{{message}}</p>
+    <Box/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -9,13 +9,11 @@
   </div>
 </template>
 <script>
+import Box from './components/Box.vue'
 export default {
- name:'App',
- data(){
-   return{
-     message:'hello vue'
-   }
- }
+  components:{
+    Box
+  }
 }
 </script>
 
